@@ -35,7 +35,7 @@ export default function Router() {
       path: "/",
       element: <MainLayout />,
       children: [
-        { path: "/", element: <LandingPage /> },
+        { path: "/future-tech", element: <LandingPage /> },
        
       ],
     },
