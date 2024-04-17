@@ -2,7 +2,7 @@ import { alpha, styled } from '@mui/material';
 import { Box, Container, Typography, useTheme } from '@mui/material';
 import { varFadeInUp, MotionInView } from '../../animate';
 
-const IMG = [...Array(10)].map((_, index) => `/static/home/clean-${index + 1}.png`);
+const IMG = [...Array(10)].map((_, index) => `static/home/clean-${index + 1}.png`);
 
 const RootStyle = styled('div')(({ theme }) => ({
   paddingTop: theme.spacing(15),
@@ -62,7 +62,7 @@ export default function LandingCleanInterfaces() {
                 ...(index === 9 && { position: 'relative', zIndex: 9 })
               }}
             >
-              <Box component="img" src={`/static/home/slider-bg.jpg`} />
+              <Box component="img" src={`static/home/slider-bg.jpg`} />
             </MotionInView>
           ))}
         </Box>

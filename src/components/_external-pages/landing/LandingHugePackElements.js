@@ -47,7 +47,7 @@ export default function LandingHugePackElements() {
 
                   <img
                     alt={`wedo`}
-                    src={`/static/home/Aim.svg`}
+                    src={`static/home/Aim.svg`}
                   />
                
              

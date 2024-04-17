@@ -31,7 +31,7 @@ export default function LandingAdvertisement() {
           }}
         >
           <motion.div animate={{ y: [-20, 0, -20] }} transition={{ duration: 4, repeat: Infinity }}>
-            <Box component="img" alt="rocket" src="/static/home/academic.svg" sx={{ maxWidth: 460, width: 1 }} />
+            <Box component="img" alt="rocket" src="static/home/academic.svg" sx={{ maxWidth: 460, width: 1 }} />
           </motion.div>
         </MotionInView>
 

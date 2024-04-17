@@ -60,9 +60,9 @@ export default function LandingHero() {
   return (
     <>
       <RootStyle initial="initial" animate="animate" variants={varWrapEnter}>
-        <HeroOverlayStyle alt="overlay" src="/static/overlay.svg" variants={varFadeIn} />
+        <HeroOverlayStyle alt="overlay" src="static/overlay.svg" variants={varFadeIn} />
 
-        <HeroImgStyle alt="hero" src="/static/home/hero.webp" variants={varFadeInUp} />
+        <HeroImgStyle alt="hero" src="static/home/hero.webp" variants={varFadeInUp} />
 
         <Container maxWidth="lg">
           <ContentStyle>
