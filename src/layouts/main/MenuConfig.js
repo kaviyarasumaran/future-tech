@@ -4,7 +4,7 @@ import fileFill from '@iconify/icons-eva/file-fill';
 import roundGrain from '@iconify/icons-ic/round-grain';
 import bookOpenFill from '@iconify/icons-eva/book-open-fill';
 // routes
-import { PATH_AUTH, PATH_DOCS, PATH_PAGE, PATH_DASHBOARD } from '../../routes/paths';
+import {  PATH_DOCS, PATH_PAGE, PATH_DASHBOARD } from '../../routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -22,7 +22,7 @@ const menuConfig = [
   {
     title: 'About us',
     icon: <Icon icon={roundGrain} {...ICON_SIZE} />,
-    path: PATH_PAGE.components
+    path: PATH_PAGE.about
   },
   {
     title: 'Services',
@@ -35,36 +35,16 @@ const menuConfig = [
           { title: 'About us', path: PATH_PAGE.about },
           { title: 'Contact us', path: PATH_PAGE.contact },
           { title: 'FAQs', path: PATH_PAGE.faqs },
-         
-        ]
-      },
-      {
-        subheader: 'Authentication',
-        items: [
-          { title: 'Login', path: PATH_AUTH.loginUnprotected },
-          { title: 'Register', path: PATH_AUTH.registerUnprotected },
-          { title: 'Reset password', path: PATH_AUTH.resetPassword },
+          { title: 'Pricing', path: PATH_PAGE.pricing },
+          { title: 'Payment', path: PATH_PAGE.payment },
+          { title: 'Maintenance', path: PATH_PAGE.maintenance },
           
         ]
       },
+     
+      
       {
-        subheader: 'Error',
-        items: [
-          { title: 'Page 404', path: PATH_PAGE.page404 },
-          { title: 'Page 500', path: PATH_PAGE.page500 },
-          { title: 'Verify code', path: PATH_AUTH.verify }
-        ]
-      },
-      {
-        subheader: 'Error',
-        items: [
-          { title: 'Page 404', path: PATH_PAGE.page404 },
-          { title: 'Page 500', path: PATH_PAGE.page500 },
-          { title: 'Verify code', path: PATH_AUTH.verify }
-        ]
-      },
-      {
-        subheader: 'Our Team',
+        subheader: 'Contact',
         items: [{ title: 'Dashboard', path: PATH_DASHBOARD.root }]
       }
     ]

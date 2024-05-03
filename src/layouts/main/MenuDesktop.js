@@ -1,11 +1,16 @@
 import PropTypes from 'prop-types';
 import { Icon } from '@iconify/react';
+import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { NavLink as RouterLink, useLocation } from 'react-router-dom';
 import arrowIosUpwardFill from '@iconify/icons-eva/arrow-ios-upward-fill';
 import arrowIosDownwardFill from '@iconify/icons-eva/arrow-ios-downward-fill';
+// material
 import { styled } from '@mui/material';
-import { Box, Link, Grid, List, Stack, Popover, ListItem } from '@mui/material';
+import { Box, Link, Grid, List, Stack, Popover, ListItem, ListSubheader, CardActionArea } from '@mui/material';
+
+// ----------------------------------------------------------------------
+
 const LinkStyle = styled(Link)(({ theme }) => ({
   ...theme.typography.subtitle2,
   color: theme.palette.text.primary,
@@ -19,7 +24,7 @@ const LinkStyle = styled(Link)(({ theme }) => ({
   }
 }));
 
-
+// ----------------------------------------------------------------------
 
 IconBullet.propTypes = {
   type: PropTypes.oneOf(['subheader', 'item'])
@@ -82,31 +87,43 @@ function MenuDesktopItem({ item, pathname, isHome, isOpen, isOffset, onOpen, onC
         <Popover
           open={isOpen}
           anchorReference="anchorPosition"
-          anchorPosition={{ top: 80, left: 0 }}
-          anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
-          transformOrigin={{ vertical: 'top', horizontal: 'center' }}
+          anchorPosition={{ top: 80, left: 1 }}
+         
           onClose={onClose}
           PaperProps={{
             sx: {
               px: 3,
               pt: 5,
-              pb: 5,
-              right: 16,
+              pb: 3,
+              right: -500,
               margin: 'auto',
-              maxWidth: 1280,
+              maxWidth: 700,
               borderRadius: 2,
               boxShadow: (theme) => theme.customShadows.z24
             }
           }}
         >
-          <Grid container spacing={3}>
+          <Grid container >
             {children.map((list) => {
               const { subheader, items } = list;
 
               return (
-                <Grid key={subheader} item xs={12} md={subheader === 'Dashboard' ? 6 : 2}>
+                <Grid key={subheader} item xs={12} md={subheader === 'Dashboard' ? 6 : 5}>
                   <List disablePadding>
-                  
+                    <ListSubheader
+                      disableSticky
+                      disableGutters
+                      sx={{
+                        display: 'flex',
+                        lineHeight: 'unset',
+                        alignItems: 'center',
+                        color: 'text.primary',
+                        typography: 'overline'
+                      }}
+                    >
+                      <IconBullet type="subheader" /> {subheader}
+                    </ListSubheader>
+
                     {items.map((item) => (
                       <ListItem
                         key={item.title}
@@ -127,7 +144,28 @@ function MenuDesktopItem({ item, pathname, isHome, isOpen, isOffset, onOpen, onC
                         }}
                       >
                         {item.title === 'Dashboard' ? (
-                        <Box></Box>
+                          <CardActionArea
+                            sx={{
+                              
+                              py: 5,
+                              px: 10,
+                              borderRadius: 2,
+                              color: 'primary.main',
+                              bgcolor: 'background.neutral'
+                            }}
+                          >
+                            <Box
+                              component={motion.img}
+                              whileTap="tap"
+                              whileHover="hover"
+                              width={200}
+                              variants={{
+                                hover: { scale: 1.02 },
+                                tap: { scale: 0.98 }
+                              }}
+                              src="/static/illustrations/illustration_dashboard.png"
+                            />
+                          </CardActionArea>
                         ) : (
                           <>
                             <IconBullet />

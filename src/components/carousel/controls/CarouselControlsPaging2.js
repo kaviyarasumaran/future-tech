@@ -1,43 +1,43 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 // material
-import { styled } from "@mui/material";
-import { Box } from "@mui/material";
+import { styled } from '@mui/material';
+import { Box } from '@mui/material';
 
 // ----------------------------------------------------------------------
 
-const RootStyle = styled("ul")({
-  display: "flex",
-  listStyle: "none",
-  justifyContent: "center",
-  "& li": {
+const RootStyle = styled('ul')({
+  display: 'flex',
+  listStyle: 'none',
+  justifyContent: 'center',
+  '& li': {
     width: 24,
     height: 24,
     opacity: 0.32,
-    cursor: "pointer",
-    "&.slick-active": {
+    cursor: 'pointer',
+    '&.slick-active': {
       opacity: 1,
-      "& .dotActive": {
+      '& .dotActive': {
         width: 18,
-        borderRadius: 8,
-      },
-    },
-  },
+        borderRadius: 8
+      }
+    }
+  }
 });
 
-const DotStyle = styled("span")(({ theme }) => ({
+const DotStyle = styled('span')(({ theme }) => ({
   width: 8,
   height: 8,
-  borderRadius: "50%",
-  transition: theme.transitions.create("all", {
+  borderRadius: '50%',
+  transition: theme.transitions.create('all', {
     easing: theme.transitions.easing.easeInOut,
-    duration: 360,
-  }),
+    duration: 360
+  })
 }));
 
 // ----------------------------------------------------------------------
 
 CarouselControlsPaging2.propTypes = {
-  color: PropTypes.string,
+  color: PropTypes.string
 };
 
 export default function CarouselControlsPaging2({ color, ...other }) {
@@ -50,20 +50,20 @@ export default function CarouselControlsPaging2({ color, ...other }) {
     customPaging: () => (
       <Box
         sx={{
-          width: "100%",
-          height: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
+          width: '100%',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center'
         }}
       >
         <DotStyle
           className="dotActive"
           sx={{
-            bgcolor: color || "primary.main",
+            bgcolor: color || 'primary.main'
           }}
         />
       </Box>
-    ),
+    )
   };
 }

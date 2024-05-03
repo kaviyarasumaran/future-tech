@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { useState, useRef } from 'react';
 // material
 import { useTheme } from '@mui/material';
-import { Box, Card } from '@mui/material';
+import { Box, Card, Typography, CardContent } from '@mui/material';
 // utils
 import mockData from '../../utils/mock-data';
 //
@@ -23,15 +23,28 @@ CarouselItem.propTypes = {
 };
 
 function CarouselItem({ item }) {
-  const { image, title } = item;
+  const { image, title, description } = item;
 
-  return <Box component="img" alt={title} src={image} sx={{ width: '100%', height: 480, objectFit: 'cover' }} />;
+  return (
+    <>
+      <Box component="img" alt={title} src={image} sx={{ width: '100%', height: 370, objectFit: 'cover' }} />
+
+      <CardContent sx={{ textAlign: 'left' }}>
+        <Typography variant="h6" noWrap gutterBottom>
+          {title}
+        </Typography>
+        <Typography variant="body2" sx={{ color: 'text.secondary' }} noWrap>
+          {description}
+        </Typography>
+      </CardContent>
+    </>
+  );
 }
 
-export default function CarouselBasic1() {
+export default function CarouselBasic2() {
   const theme = useTheme();
   const carouselRef = useRef();
-  const [currentIndex, setCurrentIndex] = useState(theme.direction === 'rtl' ? MOCK_CAROUSELS.length - 1 : 0);
+  const [currentIndex, setCurrentIndex] = useState(2);
 
   const settings = {
     dots: false,
@@ -39,6 +52,8 @@ export default function CarouselBasic1() {
     autoplay: true,
     slidesToShow: 1,
     slidesToScroll: 1,
+    initialSlide: currentIndex,
+    fade: Boolean(theme.direction !== 'rtl'),
     rtl: Boolean(theme.direction === 'rtl'),
     beforeChange: (current, next) => setCurrentIndex(next)
   };
@@ -64,6 +79,7 @@ export default function CarouselBasic1() {
         total={MOCK_CAROUSELS.length}
         onNext={handleNext}
         onPrevious={handlePrevious}
+        sx={{ bottom: 120 }}
       />
     </Card>
   );

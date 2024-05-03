@@ -35,7 +35,8 @@ export default function Router() {
       path: "/",
       element: <MainLayout />,
       children: [
-        { path: "/future-tech", element: <LandingPage /> },
+        { path: "/", element: <LandingPage /> },
+        { path: 'about-us', element: <About /> },
        
       ],
     },
@@ -43,3 +44,4 @@ export default function Router() {
 }
 
 const LandingPage = Loadable(lazy(() => import("../pages/LandingPage")));
+const About = Loadable(lazy(() => import('../pages/About')));
