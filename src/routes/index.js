@@ -37,6 +37,7 @@ export default function Router() {
       children: [
         { path: "/", element: <LandingPage /> },
         { path: 'about-us', element: <About /> },
+        { path: 'contact-us', element: <Contact /> },
        
       ],
     },
@@ -45,3 +46,4 @@ export default function Router() {
 
 const LandingPage = Loadable(lazy(() => import("../pages/LandingPage")));
 const About = Loadable(lazy(() => import('../pages/About')));
+const Contact = Loadable(lazy(() => import('../pages/Contact')));
