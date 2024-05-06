@@ -38,7 +38,11 @@ export default function Router() {
         { path: "/", element: <LandingPage /> },
         { path: 'about-us', element: <About /> },
         { path: 'contact-us', element: <Contact /> },
-       
+        { path: 'faqs', element: <Faqs /> },
+        { path: 'consulting', element: <Consulting /> },
+        { path: 'guidance', element: <Guidance /> },
+        { path: 'scholarship', element: <Scholarship /> },
+        { path: 'tution', element: <Tution /> },
       ],
     },
   ]);
@@ -47,3 +51,8 @@ export default function Router() {
 const LandingPage = Loadable(lazy(() => import("../pages/LandingPage")));
 const About = Loadable(lazy(() => import('../pages/About')));
 const Contact = Loadable(lazy(() => import('../pages/Contact')));
+const Consulting = Loadable(lazy(() => import('../pages/Consulting')));
+const Guidance = Loadable(lazy(()=>import('../pages/Guidance')));
+const Scholarship = Loadable(lazy(()=> import('../pages/Scholarship')));
+const Tution  = Loadable(lazy(()=>import('../pages/Tution')));
+const Faqs = Loadable(lazy(() => import('../pages/Faqs')));

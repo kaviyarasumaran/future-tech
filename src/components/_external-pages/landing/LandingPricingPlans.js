@@ -84,6 +84,33 @@ function PlanCard({ plan, cardIndex }) {
 export default function LandingPricingPlans() {
   return (
     <RootStyle>
+       <Container maxWidth="lg" sx={{ mt: 10, mb:5 }}>
+      <Box
+        sx={{
+          
+          justifyContent:"center",
+          position: 'relative',
+          borderRadius: 2,
+          overflow: 'hidden',
+          left:500,
+          top:-100
+          
+        }}
+      >
+        <img src="/static/home/msme.png" alt="about-vision" width={200}/>
+
+        </Box>
+
+      <Grid container justifyContent="center" >
+        <Grid item xs={12} sm={8}>
+          <MotionInView variants={varFadeInUp}>
+            <Typography variant="h3" sx={{ textAlign: 'center' }}>
+              Our vision offering the best product nulla vehicula tortor scelerisque ultrices malesuada.
+            </Typography>
+          </MotionInView>
+        </Grid>
+      </Grid>
+    </Container>
       <Container maxWidth="lg">
         <Box sx={{ mb: 10, textAlign: 'center' }}>
           <MotionInView variants={varFadeInDown}>

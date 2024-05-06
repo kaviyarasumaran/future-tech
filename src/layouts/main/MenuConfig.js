@@ -4,7 +4,7 @@ import fileFill from '@iconify/icons-eva/file-fill';
 import roundGrain from '@iconify/icons-ic/round-grain';
 import bookOpenFill from '@iconify/icons-eva/book-open-fill';
 // routes
-import {  PATH_DOCS, PATH_PAGE, PATH_DASHBOARD } from '../../routes/paths';
+import {  PATH_DOCS, PATH_PAGE } from '../../routes/paths';
 
 // ----------------------------------------------------------------------
 
@@ -32,10 +32,10 @@ const menuConfig = [
       {
         subheader: 'Other',
         items: [
-          { title: 'Consulting', path: PATH_PAGE.about },
-          { title: 'Tution', path: PATH_PAGE.contact },
-          { title: 'Guidance', path: PATH_PAGE.faqs },
-          { title: 'Scholarship', path: PATH_PAGE.pricing },
+          { title: 'Consulting', path: PATH_PAGE.consulting },
+          { title: 'Tution', path: PATH_PAGE.tution },
+          { title: 'Guidance', path: PATH_PAGE.guidance },
+          { title: 'Scholarship', path: PATH_PAGE.scholarship },
          
           
         ]
@@ -44,7 +44,7 @@ const menuConfig = [
       
       {
         subheader: 'Contact',
-        items: [{ title: 'Dashboard', path: PATH_DASHBOARD.root }]
+        items: [{ title: 'Dashboard', path: PATH_PAGE.contact }]
       }
     ]
   },

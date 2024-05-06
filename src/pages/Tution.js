@@ -1,9 +1,9 @@
 // material
 import { styled } from '@mui/material';
-import { Grid, Container } from '@mui/material';
+import {  Container, Typography } from '@mui/material';
 // components
 import Page from '../components/Page';
-import { ContactHero, ContactForm} from '../components/_external-pages/contact';
+import { TutionHero, TutionCategory, TutionList} from '../components/_external-pages/Tution';
 
 // ----------------------------------------------------------------------
 
@@ -16,18 +16,18 @@ const RootStyle = styled(Page)(({ theme }) => ({
 
 // ----------------------------------------------------------------------
 
-export default function Contact() {
+export default function Tution() {
   return (
-    <RootStyle title="Contact us | Minimal-UI">
-      <ContactHero />
-
-      <Container sx={{ my: 10 }}>
-        <Grid container spacing={10}>
-          <Grid item xs={12} md={6}>
-            <ContactForm />
-          </Grid>
-        </Grid>
+    <RootStyle title="Tution | Minimal-UI">
+      <TutionHero />
+      <Container sx={{ mt: 15, mb: 10 }}>
+        <TutionCategory />
+        <Typography variant="h3" sx={{ mb: 5 }}>
+          Frequently asked questions
+        </Typography>
+            <TutionList />
       </Container>
+
     </RootStyle>
   );
 }

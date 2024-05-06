@@ -21,14 +21,15 @@ export const PATH_AUTH = {
 export const PATH_PAGE = {
   comingSoon: '/coming-soon',
   maintenance: '/maintenance',
-  pricing: '/pricing',
-  payment: '/payment',
+  consulting:'/consulting',
+  guidance:'guidance',
+  scholarship:'scholarship',
+  tution:'tution',
   about: '/about-us',
   contact: '/contact-us',
   faqs: '/faqs',
   page404: '/404',
   page500: '/500',
-  components: '/components'
 };
 
 export const PATH_DASHBOARD = {

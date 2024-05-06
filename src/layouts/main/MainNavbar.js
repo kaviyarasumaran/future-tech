@@ -7,6 +7,7 @@ import MenuDesktop from "./MenuDesktop";
 import MenuMobile from "./MenuMobile";
 import navConfig from "./MenuConfig";
 import { styled } from "@mui/system";
+import { PATH_PAGE } from "../../routes/paths";
 
 const APP_BAR_MOBILE = 64;
 const APP_BAR_DESKTOP = 88;
@@ -73,7 +74,7 @@ export default function MainNavbar() {
             />
           </MHidden>
 
-          <Button variant="contained" target="_blank" href="">
+          <Button variant="contained" target="_blank" href={PATH_PAGE.contact}>
             Contact
           </Button>
 
