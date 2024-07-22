@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.js": "/future-tech/static/js/main.59561a31.js",
+    "static/js/250.b77e8942.chunk.js": "/future-tech/static/js/250.b77e8942.chunk.js",
+    "static/js/578.e264af87.chunk.js": "/future-tech/static/js/578.e264af87.chunk.js",
+    "static/js/629.29113277.chunk.js": "/future-tech/static/js/629.29113277.chunk.js",
+    "static/js/246.e04a7577.chunk.js": "/future-tech/static/js/246.e04a7577.chunk.js",
+    "static/js/647.515ed2d7.chunk.js": "/future-tech/static/js/647.515ed2d7.chunk.js",
+    "static/js/563.9ecf1fb1.chunk.js": "/future-tech/static/js/563.9ecf1fb1.chunk.js",
+    "static/js/949.daa9f831.chunk.js": "/future-tech/static/js/949.daa9f831.chunk.js",
+    "static/js/705.94816505.chunk.js": "/future-tech/static/js/705.94816505.chunk.js",
+    "static/js/453.aca34196.chunk.js": "/future-tech/static/js/453.aca34196.chunk.js",
+    "static/js/951.49504bb1.chunk.js": "/future-tech/static/js/951.49504bb1.chunk.js",
+    "static/js/455.0cb0b131.chunk.js": "/future-tech/static/js/455.0cb0b131.chunk.js",
+    "static/js/197.9010521e.chunk.js": "/future-tech/static/js/197.9010521e.chunk.js",
+    "static/js/523.0e513a9d.chunk.js": "/future-tech/static/js/523.0e513a9d.chunk.js",
+    "index.html": "/future-tech/index.html",
+    "main.59561a31.js.map": "/future-tech/static/js/main.59561a31.js.map",
+    "250.b77e8942.chunk.js.map": "/future-tech/static/js/250.b77e8942.chunk.js.map",
+    "578.e264af87.chunk.js.map": "/future-tech/static/js/578.e264af87.chunk.js.map",
+    "629.29113277.chunk.js.map": "/future-tech/static/js/629.29113277.chunk.js.map",
+    "246.e04a7577.chunk.js.map": "/future-tech/static/js/246.e04a7577.chunk.js.map",
+    "647.515ed2d7.chunk.js.map": "/future-tech/static/js/647.515ed2d7.chunk.js.map",
+    "563.9ecf1fb1.chunk.js.map": "/future-tech/static/js/563.9ecf1fb1.chunk.js.map",
+    "949.daa9f831.chunk.js.map": "/future-tech/static/js/949.daa9f831.chunk.js.map",
+    "705.94816505.chunk.js.map": "/future-tech/static/js/705.94816505.chunk.js.map",
+    "453.aca34196.chunk.js.map": "/future-tech/static/js/453.aca34196.chunk.js.map",
+    "951.49504bb1.chunk.js.map": "/future-tech/static/js/951.49504bb1.chunk.js.map",
+    "455.0cb0b131.chunk.js.map": "/future-tech/static/js/455.0cb0b131.chunk.js.map",
+    "197.9010521e.chunk.js.map": "/future-tech/static/js/197.9010521e.chunk.js.map",
+    "523.0e513a9d.chunk.js.map": "/future-tech/static/js/523.0e513a9d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.59561a31.js"
+  ]
+}
